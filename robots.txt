@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sbscctv.in/sitemap.xml
