@@ -1,18 +1,15 @@
-# SB System Service – sbscctv.in
+# SB System Service website update
+Prepared from the supplied business poster.
 
-Information website for SB System Service, Dindigul – wholesale dealer of CCTV, biometric attendance, access control and security accessories.
+Address: 16/96 Spencer Compound, Dindigul, Tamil Nadu.
+Phone: +91 99450 55000 and +91 98940 33434.
+WhatsApp enquiry currently uses the first phone number; WhatsApp availability has not been verified.
+Distributor: Hikvision, Prama, HI-FOCUS.
+Sub-distributor: CP PLUS, Dahua, Trueview, Qubo, Maxxion, Tiandy, Securemax, Fyber.
+Logo: clean SVG recreation based on the SBS mark in the poster; not an original vector file.
+Existing email and business hours were retained and are not confirmed by the poster.
 
-Plain static site (HTML/CSS/JS), no build step.
-
-## Update business details
-Edit the `SITE` object at the top of `assets/main.js` (phone, WhatsApp number, email, address).
-To pin the exact shop on the map, replace the `iframe` `src` in the Contact section of `index.html`
-with the "Embed a map" link from Google Maps.
-
-## Hosting (GitHub Pages)
-1. Repo Settings → Pages → Deploy from branch → `main` / root.
-2. `CNAME` already contains `sbscctv.in`.
-3. At the domain registrar, add DNS records:
-   - `A` records for `@` → 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
-   - `CNAME` for `www` → `rnrinfo2014.github.io`
-4. Enable "Enforce HTTPS" once the certificate is issued.
+This is a buildless static site. Copy these files into the root of sbsystemdgl/sbsystem on main.
+Cloudflare Workers Builds is already connected and auto-deploys main to the existing sbsystem Worker.
+Preserve the existing sbscctv.in/* and *.sbscctv.in/* routes. No paid services are required.
+Updates pushed to main are automatically built and deployed by the connected Cloudflare Workers Builds project.

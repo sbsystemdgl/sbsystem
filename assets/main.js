@@ -1,9 +1,10 @@
 // ===== Business details – edit these in one place =====
 const SITE = {
-  phone: "+91 XXXXX XXXXX",      // TODO: real phone number, e.g. "+91 98xxxxxxxx"
-  whatsapp: "91XXXXXXXXXX",      // TODO: WhatsApp number with country code, digits only
+  phone: "+91 99450 55000",
+  secondaryPhone: "+91 98940 33434",
+  whatsapp: "919945055000",
   email: "info@sbscctv.in",
-  address: "Dindigul, Tamil Nadu", // TODO: full shop address
+  address: "16/96 Spencer Compound, Dindigul, Tamil Nadu",
   whatsappMessage: "Hi SB System Service, I would like a wholesale quote for:"
 };
 
@@ -15,6 +16,10 @@ document.querySelectorAll(".js-whatsapp").forEach((a) => {
 document.querySelectorAll(".js-phone").forEach((a) => {
   a.textContent = SITE.phone;
   a.href = `tel:${digits(SITE.phone)}`;
+});
+document.querySelectorAll(".js-phone-secondary").forEach((a) => {
+  a.textContent = SITE.secondaryPhone;
+  a.href = `tel:${digits(SITE.secondaryPhone)}`;
 });
 document.querySelectorAll(".js-phone-btn").forEach((a) => {
   a.href = `tel:${digits(SITE.phone)}`;

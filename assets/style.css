@@ -192,3 +192,16 @@ img, svg { display: block; }
   .cards, .features, .stats { grid-template-columns: 1fr; }
   .brands { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* SBS identity and verified distribution details */
+.brand-logo { width: 76px; height: 58px; object-fit: contain; flex: none; }
+.brand-group { margin-bottom: 28px; }
+.brand-group h3 { color: var(--navy); font-size: 1.05rem; margin-bottom: 14px; }
+.distributor-brands { grid-template-columns: repeat(3, 1fr); }
+.distributor-brands li { background: var(--bg-alt); border-top: 3px solid var(--accent); }
+@media (max-width: 540px) {
+  .brand-logo { width: 60px; height: 46px; }
+  .logo-text { font-size: .9rem; }
+  .logo-text small { font-size: .6rem; }
+  .distributor-brands { grid-template-columns: 1fr; }
+}
